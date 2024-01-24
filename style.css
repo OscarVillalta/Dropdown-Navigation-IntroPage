@@ -123,13 +123,13 @@ a:visited{
 }
 
 li + li {
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 .register{
     border-style: solid;
     border-width: 2px;
-    border-radius: 15px;
+    border-radius: 20px;
     border-color: hsl(0, 0%, 41%);
     padding: 1rem 1.5rem;
 }
@@ -137,5 +137,79 @@ li + li {
 /* Main */
 
 main{
-    margin: 0 10.625rem
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    margin: 0 10.625rem;
+    margin-top: 2rem;
+}
+
+.call-to-action{
+    display: flex;
+
+    flex-direction: column;
+    flex: 1;
+    
+
+    justify-content: space-between;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 5rem;
+
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+p{
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 41%);
+
+    padding-right: 5rem;
+}
+
+.learn-more{
+
+  display: inline-block;
+
+  color: hsl(0, 0%, 98%);
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  background-color: black;
+  border-radius: 1rem;
+
+  margin-top: 2.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.learn-more:visited{
+  color: hsl(0, 0%, 98%);
+}
+
+.client-logos{
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 3rem;
+}
+
+.hero-img-container{
+  width: 30rem;
+  height: 40rem;
+
+  display: flex;
+  justify-content: flex-end;
+
+  flex-basis: 30rem;
+}
+
+.hero-img{
+  justify-self: center;
 }
