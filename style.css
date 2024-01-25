@@ -95,18 +95,19 @@ header{
     padding: 2rem 2.5rem;
 }
 
+.logo{
+  margin-right: 3.9rem;
+}
+
 .links{
     display: flex;
     align-items: center;
 }
 
-.logo{
-    margin-right: 3.9rem;
-}
-
 ul{
     float: right;
     list-style-type: none;
+    padding-left: 0;
 }
 
 li{
@@ -124,6 +125,67 @@ a:visited{
 
 li + li {
     padding-left: 2rem;
+}
+
+li.dropdown-title{
+  position: relative;
+}
+
+ul.dropdown{
+  min-width: auto;
+  display: none;
+
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  z-index: 999;
+
+  list-style: none;
+
+  position: absolute;
+  padding: 1rem;
+  right: 0;
+
+}
+
+.features{
+  width: 9.5rem;
+}
+
+.company{
+  width: 7.65rem;
+  left: 2rem;
+}
+
+ul.dropdown li{
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  padding: 0.3rem 0;
+}
+
+ul.dropdown li a{ 
+  display: inline;
+  text-align: left;
+}
+
+ul li.dropdown-title:hover ul.dropdown{
+  display: block;
+}
+
+ul.dropdown li:hover{
+  display: block;
+}
+
+
+a:hover{
+  border-color: black;
+  color: black;
+}
+
+ul.dropdown li img{
+  display: inline;
 }
 
 .register{
@@ -181,6 +243,8 @@ p{
 
   background-color: black;
   border-radius: 1rem;
+  border-style: solid;
+  border-color: black;
 
   margin-top: 2.5rem;
   padding: 0.5rem 1.5rem;
@@ -188,6 +252,11 @@ p{
 
 .learn-more:visited{
   color: hsl(0, 0%, 98%);
+}
+
+.learn-more:hover{
+  color: black;
+  background-color: white;
 }
 
 .client-logos{
