@@ -26,21 +26,16 @@ navClose.addEventListener('click', () => {
 
 // Mobile drop Down menu
 
-const featuresTab = document.getElementsByClassName('dropdown-title');
+const tabs = document.getElementsByClassName('dropdown-title');
 const dropdown = document.getElementsByClassName('dropdown');
 
-//features
-
-featuresTab[0].addEventListener('click', () => {
-    dropdown[0].classList.toggle('show-dropdown');
-    console.log('help');    
-})
-
-//Company
-
-featuresTab[1].addEventListener('click', () => {
-    dropdown[1].classList.toggle('show-dropdown');
-})
+for (let index = 0; index < tabs.length; index++) {
+    if(window.innerWidth < 900){
+        tabs[index].addEventListener('click', () => {
+            dropdown[index].classList.toggle('show-dropdown');  
+        })
+    }
+}
 
 if(window.innerWidth < 900) {
     dropdown[0].classList.add('nohover');

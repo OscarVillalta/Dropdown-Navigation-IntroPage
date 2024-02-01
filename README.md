@@ -23,18 +23,14 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
+ 
+![Static Desktop view](./screenshots/4.png)
+ 
+![Static Mobile view](/screenshots/1.png)
+ 
+![Mobile Side menu](/screenshots/3.png)
 
-- Static Desktop view
-![image alt text](./screenshots/4.png)
-
-- Static Mobile view
-![image alt text](/screenshots/1.png)
-
-- Mobile Side menu
-![image alt text](/screenshots/3.png)
-
-- Mobile Side menu expanded
-![image alt text](/screenshots/2.png)
+![Mobile Side menu expanded](/screenshots/2.png)
 
 ### Links
 
